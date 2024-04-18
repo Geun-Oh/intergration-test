@@ -1,0 +1,11 @@
+main = "index.ts"
+
+kv_namespaces = [
+  { binding = "TEST_NAMESPACE1", id = "hello", preview_id = "world" },
+]
+
+workers_dev = true
+
+compatibility_date = "2024-03-20"
+
+port = 8787

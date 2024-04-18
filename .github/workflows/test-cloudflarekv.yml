@@ -1,0 +1,38 @@
+name: Miniflare Integration Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  integration-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Miniflare CLI
+        run: npm install -g miniflare@2
+
+      - name: Start Miniflare
+        run: miniflare --kv KVPairs --env .env.test &
+        env:
+          MY_SECRET: example_secret
+          ANOTHER_VAR: example_value
+
+      - name: Run Integration Tests
+        run: |
+          # Your test command here, for example:
+          go test -v ./...
+        env:
+          BASE_URL: http://localhost:8787
+          MY_SECRET: example_secret
+          ANOTHER_VAR: example_value
