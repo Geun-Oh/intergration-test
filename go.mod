@@ -3,12 +3,12 @@ module github.com/Geun-Oh/intergration-test
 go 1.22.1
 
 require (
-	github.com/cloudflare/cloudflare-go v0.93.0
+	github.com/cloudflare/cloudflare-go v0.95.0
+	github.com/cloudflare/cloudflare-go/v2 v2.0.0
 	github.com/stretchr/testify v1.9.0
 )
 
 require (
-	github.com/cloudflare/cloudflare-go/v2 v2.0.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
@@ -20,8 +20,8 @@ require (
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/tidwall/sjson v1.2.5 // indirect
-	golang.org/x/net v0.24.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/net v0.25.0 // indirect
+	golang.org/x/text v0.15.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
