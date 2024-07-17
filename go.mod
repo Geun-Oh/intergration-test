@@ -4,7 +4,7 @@ go 1.22.1
 
 require (
 	github.com/cloudflare/cloudflare-go v0.98.0
-	github.com/cloudflare/cloudflare-go/v2 v2.0.0
+	github.com/cloudflare/cloudflare-go/v2 v2.4.0
 	github.com/stretchr/testify v1.9.0
 )
 
