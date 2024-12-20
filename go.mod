@@ -3,9 +3,9 @@ module github.com/Geun-Oh/intergration-test
 go 1.22.1
 
 require (
-	github.com/cloudflare/cloudflare-go/v2 v2.4.0
 	github.com/cloudflare/cloudflare-go v0.104.0
-	github.com/stretchr/testify v1.9.0
+	github.com/cloudflare/cloudflare-go/v2 v2.4.0
+	github.com/stretchr/testify v1.10.0
 )
 
 require (
